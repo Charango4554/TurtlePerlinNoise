@@ -20,5 +20,3 @@ It then creates a turtle object (called t) and sets its speed to 0 (meaning it d
 It then uses two nested "for" loops to traverse all the pixels in the Perlin noise matrix. At each pixel, he uses the value of the matrix to define the fill color of the turtle (using the same value for the red, green and blue components) and fills a 1x1 square using the internal "for" loop. It then moves forward one pixel before continuing to draw the next square. At the end of each line, he returns the turtle to its starting position for the next line.
 
 Finally, it uses turtle.exitonclick() to allow the user to close the window by clicking on it.
-
-Translated with www.DeepL.com/Translator (free version)
