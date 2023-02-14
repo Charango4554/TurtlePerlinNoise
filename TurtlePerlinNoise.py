@@ -1,6 +1,6 @@
 #Code written by Charango4554 (https://github.com/Charango4554)
 
-import turtle
+import turtle as t
 import numpy as np
 
 width = int(input("insert the desired width:"))
@@ -8,7 +8,7 @@ height = int(input("insert the desired height:"))
 octaves = 4
 
 perlin_noise = np.random.rand(width, height)# génération d'une matrice aléatoire de valeurs de bruit de Perlin
-t = turtle.Turtle()
+
 t.speed(0)
 t.penup()
 
@@ -28,4 +28,4 @@ for x in range(width):
         t.forward(1)
     t.setx(-width/2)# retour à la position de départ
     t.sety(t.ycor() - 1)# descente d'une ligne
-turtle.exitonclick()
+t.exitonclick()
